@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # This is bash program to display Hello World
 echo " Hello, World "
-ls > file_list.txt
+sort < file_list.txt
