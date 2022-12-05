@@ -1,0 +1,4 @@
+#!/bin/bash
+#Script that displays the contents of /etc/passwd and /etc/hosts
+cat /etc/passwd
+cat /etc/hosts
