@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # This is bash program to display a confused smiley
 
 echo "(0o)'"
