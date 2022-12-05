@@ -1,0 +1,3 @@
+#!/bin/bash
+ #Script that writes into the file ls_cwd_content the result of the command ls -la.
+ls -la > ls_cwd_content
