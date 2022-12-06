@@ -1,3 +1,0 @@
-#!/bin/bash
-#Script that displays the third line of the file iacta.
-cat iacta | head -n 3 | tail -n 1
