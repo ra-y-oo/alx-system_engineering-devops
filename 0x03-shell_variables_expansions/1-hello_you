@@ -1,0 +1,3 @@
+#!/bin/bash
+#Prints hello user
+echo "Hello $USER"
