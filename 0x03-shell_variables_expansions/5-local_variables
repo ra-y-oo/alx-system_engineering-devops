@@ -1,3 +1,2 @@
 #!/bin/bash
-#Lists local, environment variables and functions
 declare
