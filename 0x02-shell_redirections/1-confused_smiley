@@ -1,4 +1,2 @@
 #!/bin/bash
-# This is bash program to display a confused smiley
-
-echo "(Ôo)'"
+echo "\"(Ôo)'"
