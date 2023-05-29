@@ -1,0 +1,24 @@
+<mxfile host="app.diagrams.net" modified="2023-05-29T14:13:46.314Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" version="21.3.5" etag="VW15holIeyTREN_8AiNr" type="github">
+  <diagram name="Page-1" id="Mg19pzPVZFwwo0_jK6pv">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Web Infrastructure" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry width="206" height="231" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Web Server" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="2">
+          <mxGeometry x="62" y="116" width="98" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="www.foobar.com" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="2">
+          <mxGeometry x="43" y="33" width="136" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.4994944965138155;exitY=1.0121212583599668;entryX=0.49929848495794804;entryY=0.004081648223254145;" edge="1" parent="2" source="4" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
