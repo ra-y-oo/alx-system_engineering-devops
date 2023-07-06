@@ -1,10 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# displays all active IPv4 IPs on the machine it is executed on
 
-# Retrieve the network interfaces
-interfaces=$(ip -o -4 route show to default | awk '{print $5}')
-
-# Iterate over each interface and display the IPv4 IPs
-for interface in $interfaces; do
-    ipv4=$(ip -4 addr show dev $interface | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
-    echo "Interface $interface: $ipv4"
-done
+ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | cut -b 11-
