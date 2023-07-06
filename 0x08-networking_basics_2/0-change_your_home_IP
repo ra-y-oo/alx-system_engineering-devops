@@ -1,13 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Change localhost to 127.0.0.2
+# Change facebook.com to 8.8.8.8
 
-# Backup the original /etc/hosts file
-sudo cp /etc/hosts /etc/hosts.backup
-
-# Update /etc/hosts file
-echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts
-echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts
-
-# Flush DNS cache
-sudo systemctl restart systemd-resolved.service
-
-echo "Configuration completed."
+cp /etc/hosts ~/hosts.new
+sed -i 's/127.*$/127.0.0.2 localhost\n8.8.8.8 facebook.com/' ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
