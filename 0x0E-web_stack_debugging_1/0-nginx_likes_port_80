@@ -2,4 +2,15 @@
 # configures a server to listening on port 80 of all server's active IPv4 IPs
 
 sudo sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
+
+# Get the server's active IPv4 IPs
+ipv4_ips=$(ip -4 addr | grep inet | awk '{print $2}' | cut -d '/' -f 1)
+
+# Configure Nginx to listen on port 80 for each IPv4 IP
+for ip in $ipv4_ips; do
+  config_file="/etc/nginx/sites-available/default"
+  listen_line="listen $ip:80;"
+  grep -qF "$listen_line" "$config_file" || echo "$listen_line" | sudo tee -a "$config_file"
+done
+
 sudo service nginx restart
