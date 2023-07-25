@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-'''A script that gathers employee name completed
-tasks and total number of tasks from an API
+'''A script  for a given employee ID, returns information about his/her TODO list progress
 '''
 
 import re
